@@ -1,5 +1,7 @@
 package com.saran;
 
+import com.saran.Model.Employee;
+import com.saran.Model.Meeting;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
   

@@ -1,4 +1,8 @@
-package com.saran;
+package com.saran.Model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import java.util.HashSet;
@@ -10,7 +14,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
- 
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name="MEETINGM2M")
 public class Meeting {
@@ -34,37 +41,4 @@ public class Meeting {
         this.meetingDate = new Date();
     }
 
-	public Long getMeetingId() {
-		return meetingId;
-	}
-
-	public void setMeetingId(Long meetingId) {
-		this.meetingId = meetingId;
-	}
-
-	public String getSubject() {
-		return subject;
-	}
-
-	public void setSubject(String subject) {
-		this.subject = subject;
-	}
-
-	public Date getMeetingDate() {
-		return meetingDate;
-	}
-
-	public void setMeetingDate(Date meetingDate) {
-		this.meetingDate = meetingDate;
-	}
-
-	public Set<Employee> getEmployees() {
-		return employees;
-	}
-
-	public void setEmployees(Set<Employee> employees) {
-		this.employees = employees;
-	}
-     
-    
 }

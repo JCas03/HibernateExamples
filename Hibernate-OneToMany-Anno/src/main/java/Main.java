@@ -5,9 +5,9 @@
 	import org.hibernate.SessionFactory;
 	import org.hibernate.Transaction;
 	
-	import com.onlinetutorialspoint.hibernate.pojo.Customer;
-	import com.onlinetutorialspoint.hibernate.pojo.Vendor;
-	import com.onlinetutorialspoint.util.HibernateUtil;
+	import com.JC.hibernate.pojo.Customer;
+	import com.JC.hibernate.pojo.Vendor;
+	import com.JC.util.HibernateUtil;
 	
 	public class Main {
 		

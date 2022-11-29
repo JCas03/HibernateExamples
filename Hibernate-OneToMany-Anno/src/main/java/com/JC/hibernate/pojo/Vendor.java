@@ -1,4 +1,8 @@
-package com.onlinetutorialspoint.hibernate.pojo;
+package com.JC.hibernate.pojo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Set;
 
@@ -10,6 +14,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "vendor")
 public class Vendor {
@@ -24,28 +31,5 @@ public class Vendor {
 	@JoinColumn(name = "venid", referencedColumnName = "vendid")
 	private Set customers;
 
-	public int getVendorId() {
-		return vendorId;
-	}
-
-	public void setVendorId(int vendorId) {
-		this.vendorId = vendorId;
-	}
-
-	public String getVendorName() {
-		return vendorName;
-	}
-
-	public void setVendorName(String vendorName) {
-		this.vendorName = vendorName;
-	}
-
-	public Set getCustomers() {
-		return customers;
-	}
-
-	public void setCustomers(Set customers) {
-		this.customers = customers;
-	}
 
 }

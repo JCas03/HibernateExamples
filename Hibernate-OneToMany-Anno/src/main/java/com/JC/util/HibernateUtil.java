@@ -1,4 +1,4 @@
-package com.onlinetutorialspoint.util;
+package com.JC.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;

@@ -1,4 +1,8 @@
-package com.saran;
+package com.saran.Model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -14,6 +18,9 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
  
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name="EMPLOYEEM2M")
 public class Employee {
      
@@ -36,45 +43,13 @@ public class Employee {
                 inverseJoinColumns={@JoinColumn(name="MEETING_ID")})
     private Set<Meeting> meetings = new HashSet<>();//HAS A
      
-    public Employee() {
-    }
+
  
     public Employee(String firstname, String lastname) {
         this.firstname = firstname;
         this.lastname = lastname;
     }
 
-	public Long getEmployeeId() {
-		return employeeId;
-	}
 
-	public void setEmployeeId(Long employeeId) {
-		this.employeeId = employeeId;
-	}
-
-	public String getFirstname() {
-		return firstname;
-	}
-
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
-	}
-
-	public String getLastname() {
-		return lastname;
-	}
-
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
-
-	public Set<Meeting> getMeetings() {
-		return meetings;
-	}
-
-	public void setMeetings(Set<Meeting> meetings) {
-		this.meetings = meetings;
-	}
-         
    
 }
