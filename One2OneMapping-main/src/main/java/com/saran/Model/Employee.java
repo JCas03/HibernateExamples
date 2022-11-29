@@ -1,4 +1,4 @@
-package com.saran;
+package com.saran.Model;
 
 import java.sql.Date;
 
@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.saran.Model.Address;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

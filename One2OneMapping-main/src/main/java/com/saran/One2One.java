@@ -3,6 +3,8 @@ package com.saran;
 import java.sql.Date;
 import java.util.List;
 
+import com.saran.Model.Address;
+import com.saran.Model.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
