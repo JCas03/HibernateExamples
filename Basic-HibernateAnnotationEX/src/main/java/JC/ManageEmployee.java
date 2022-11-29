@@ -1,6 +1,6 @@
 package JC;
 
-import Model.Employee;
+import JC.Model.Employee;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
