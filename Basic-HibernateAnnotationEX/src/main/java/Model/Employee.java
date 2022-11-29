@@ -1,4 +1,4 @@
-package Entity;
+package Model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,16 +10,16 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "EMPLOYEE")
+@Table(name = "Emp")
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "first_name")
+    @Column(name = "fname")
     private String firstName;
 
-    @Column(name = "last_name")
+    @Column(name = "lname")
     private String lastName;
 
     @Column(name = "salary")
